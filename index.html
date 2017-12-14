@@ -2,6 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="bootstrap.min.css" >
 		<style>
 			body{
@@ -12,21 +13,44 @@
 				width:100%;
 			}
 			.footer{
-				background-color:#989898;
 				height:10vh;
-				width:100%;
+			}
+			.white-box{
+				margin-top:15vh;
+				background:rgba(255,255,255,0.86);
+			}
+			input[type=text],input[type=password]{
+				background-color:rgb(143,143,143);
+				color:#fff;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="header">
-		asd
-		</div>
-		<div class="footer">
-			<div class="container"
+			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 text-center">Hello World</div>
-					<div class="col-sm-6 text-center">Hello World</div>
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4 white-box text-center">
+						<h1>Login</h1><br>
+						<form class="form-group">
+						<label class="label label-primary">User Id</label><br>
+						<input type="text" name="id" class="form-control"><br><br>
+						<label class="label label-primary">Password</label><br>
+						<input type="password" name="pass" class="form-control" /><br><br>
+						<input type="submit" class="btn btn-success" value="Login" />
+						<input type="reset" class="btn btn-danger" value="Reset" />
+						
+						</form>
+					</div>
+					<div class="col-sm-4"></div>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center footer text-white" style="background-color:#21424a;"><h4 style="margin-top:4%;">Register Now</h4></div>
+					<div class="col-sm-6 text-center bg-success footer text-white" style="background-color:#2fac6c;"><h4 style="margin-top:4%;">Forgot Something</h4></div>
 				</div>
 		</div>
 	</div>
